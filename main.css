@@ -23,13 +23,18 @@ body {
   padding: 35px 30px;
   background-image: url(./Background.png);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 768px;
+  min-width: 450px;
+}
+
+._right_content {
+  flex-basis: 50%;
 }
 
 ._top-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   font-family: "Raleway", sans-serif;
   font-size: 12px;
 }
@@ -122,7 +127,7 @@ img {
   }
 
   .wrapper {
-    width: 95%;
+    width: 75%;
   }
 
   .my-content p {
@@ -145,7 +150,7 @@ img {
 
 @media only screen and (max-width: 600px) {
   .wrapper {
-    width: 95%;
+    width: 85%;
   }
 
   .my-content {
