@@ -9,19 +9,22 @@
 body {
   background-image: url(./Background.png);
   border-left: 18px solid rgba(0, 174, 255, 1);
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
+  background-size: cover;
 }
 
 .wrapper {
   width: 85%;
   margin: 0px auto;
-  padding: 20px;
+  padding: 70px 20px;
 }
 
 ._top-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   font-family: "Raleway", sans-serif;
   font-size: 12px;
 }
@@ -29,6 +32,7 @@ body {
 img {
   object-fit: contain;
   width: 12%;
+  min-width: 45px;
 }
 ._left_content {
   display: flex;
@@ -42,6 +46,7 @@ img {
   margin-top: 70px;
   font-family: "Work Sans", sans-serif;
   width: 78%;
+  flex-wrap: wrap;
 }
 
 .my-content h4 {
@@ -54,7 +59,7 @@ img {
   font-size: 33px;
   font-style: normal;
   font-weight: 400;
-  line-height: 56px;
+  line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
 }
@@ -94,4 +99,71 @@ img {
 
 .signature {
   width: 8%;
+}
+
+@media only screen and (max-width: 992px) {
+  .wrapper {
+    width: 90%;
+  }
+  .my-content h2 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .my-content {
+    width: 85%;
+    gap: 10px;
+  }
+
+  .wrapper {
+    width: 95%;
+  }
+
+  .my-content p {
+    font-family: Raleway;
+    font-size: 15px;
+  }
+
+  .my-content h2 {
+    margin-bottom: 15px;
+    font-family: Work Sans;
+    font-size: 25px;
+
+    text-align: center;
+  }
+
+  .my-content h4 {
+    font-size: 27px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  .my-content {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .my-content h2 {
+    margin-bottom: 15px;
+    font-family: Work Sans;
+    font-size: 22px;
+    text-align: left;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  ._top-content {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
 }
