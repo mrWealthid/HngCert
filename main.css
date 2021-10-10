@@ -18,7 +18,7 @@ body {
 .wrapper {
   border-left: 16px solid rgba(0, 174, 255, 1);
   background-size: cover;
-  width: 68%;
+  width: 60%;
   margin: 0px auto;
   padding: 35px 30px;
   background-image: url(./Background.png);
@@ -165,7 +165,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   ._top-content {
     flex-direction: column;
     gap: 15px;
